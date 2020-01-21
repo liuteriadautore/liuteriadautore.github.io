@@ -1,0 +1,16 @@
+# Site settings
+title: Andrea Spada
+tagline: By Pixelarity
+description: Maker and Restorer of Fine String Instruments
+baseurl: ""
+url: "https://liuteriadautore.github.io"
+
+# Build settings
+markdown: kramdown
+sass:
+  sass_dir: assets/sass
+
+# Collections
+# Add new slides as HTML files inside the _panels folder
+collections:
+  - panels

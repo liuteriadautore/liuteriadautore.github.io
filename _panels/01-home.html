@@ -1,0 +1,27 @@
+---
+html_id: home
+class: special
+title: Home
+image: /images/pic01.jpg
+position: center center
+---
+
+<header>
+	<h1>{{ site.title }}</h1>
+	<p>Maker and Restorer<br />
+	of Fine String Instruments</p>
+</header>
+<nav id="nav">
+	<ul class="actions stacked special animated spinY">
+		{% for panel in site.panels %}
+			{% unless panel.class == "special" %}
+				<li><a href="#{{ panel.html_id }}" class="button">{{ panel.title }}</a></li>
+			{% endunless %}
+		{% endfor %}
+	</ul>
+</nav>
+<ul class="icons">
+	<li><a href="https://www.facebook.com/liuteriadautore" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+	<li><a href="https://www.instagram.com/andreaspada.liuteriadautore/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+	<li><a href="mailto:info@andreaspada.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+</ul>
